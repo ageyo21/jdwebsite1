@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Now</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/contact.css">
+  </head>
+ 
+    <h1 class="heading">Contact</h1>
+    <div class="contact">
+      <p>"Ready to capture your special day? Let's connect and turn your moments into timeless memories. <br>
+      Whether it's a whisper of inquiry or a resounding declaration of love, each click brings us closer <br>
+      to immortalizing your story. Let's paint your dreams in pixels, frame by frame, and weave them into <br>
+      the tapestry of memory. Reach out and let's embark on this journey together, where every click is a <br>
+      step towards eternalizing your love story. <br></p>
+    </div>
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-23dbf39 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="23dbf39" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+      <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e1c0313" data-id="e1c0313" data-element_type="column">
+              <div class="elementor-widget-wrap elementor-element-populated">
+                  <div class="elementor-element elementor-element-5494e52 elementor-widget elementor-widget-art-contact-themselves" data-id="5494e52" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="art-contact-themselves.default">
+                      <div class="elementor-widget-container">
+                          <div class="art-contacts-themselves">
+                              <div class="row">
+                                  <div class="col-md-3 offset-md-1">
+                                      <div class="art-contact-item">
+                                          <div class="art-contact-icon">
+                                              <a href="mailto:jdsharma8409@gmail.com"></a>
+                                          </div>
+                                          <a href="mailto:jdsharma8409@gmail.com"><h5 class="art-contact-name">Email</h5></a>
+                                          <div class="art-body-two-font contact-itself">jdsharma8409@gmail.com</div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="art-contact-item">
+                                          <div class="art-contact-icon">
+                                              <a href="tel:+91 9307038360"></a>
+                                          </div>
+                                          <a href="tel:+91 9307038360"><h5>Telephone</h5></a>
+                                          <div class="art-body-two-font">+91 9307038360</div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <div class="art-contact-item">
+                                          <div class="art-contact-icon">
+                                              <a href="#"></a>
+                                          </div>
+                                          <a href="#"><h5>Location</h5></a>
+                                          <div class="art-body-two-font"> Shahpur,opposite of astha bhuji devi mandir, Gorakhpur, 273006 </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <h1 class="book">Book Now</h1><br>
+    <p align="center">"Ready to transform your moments into timeless memories? Drop your contacts and we will reach out to you soon."</p>
+    <div class="form">
+      <form class="row g-3" method="post" action="{% url 'saveenquiry' %}">
+        {% csrf_token %}
+        <div class="col-md-6 col-sm-12">
+            {{ form.name.label_tag }}
+            {{ form.name }}
+        </div>
+        <div class="col-md-6 col-sm-12">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+        </div>
+        <div class="col-md-6 col-sm-12">
+            {{ form.phone.label_tag }}
+            {{ form.phone }}
+        </div>
+        <div class="col-md-6 col-sm-12">
+            {{ form.referral.label_tag }}
+            {{ form.referral }}
+        </div>
+        <div class="col-md-6 col-sm-12">
+            {{ form.date.label_tag }}
+            {{ form.date }}
+        </div>
+        <div class="col-md-6 col-sm-12">
+            {{ form.occassion.label_tag }}
+            {{ form.occassion }}
+        </div>
+        <div class="col-md-6 col-sm-12">
+            {{ form.location.label_tag }}
+            {{ form.location }}
+        </div>
+        <div class="col-md-2 col-sm-12">
+            {{ form.currency.label_tag }}
+            {{ form.currency }}
+        </div>
+        <div class="col-md-4 col-sm-12">
+            {{ form.budget.label_tag }}
+            {{ form.budget }}
+        </div>
+        <div class="col-md-12 col-sm-12">
+            {{ form.comments.label_tag }}
+            {{ form.comments }}
+        </div>
+        <div class="container">
+            <button type="submit" class="btn btn-dark mt-3" style="height:65px; width:170px; text-align:center;">Submit Inquiry</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+{% endblock %}    
+
+
+
+<!-- -->

@@ -1,0 +1,287 @@
+html, body{
+  height: 100%;
+  background-blend-mode: multiply;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@media (max-width: 991px) {
+  .sidebar{
+      background-color:white;
+      font-size: 20px;
+      
+  }
+  .sidebar .offcanvas-body li a{
+      padding: 20px 20px 20px 32px;
+  }
+
+}
+/* Optional custom styles */
+.sidebar .btn-close {
+  margin-top: 3%;
+  color: black;
+  font-size: 45px;
+}
+.sidebar .btn-close:hover{
+  color: darkred;
+} 
+
+.container{
+  margin: 0 auto;
+  width:100%;
+  
+}
+.nav-item {
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  padding: 10px 20px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.btn-close {
+  margin: 1rem;
+}
+.logo{
+  max-width: 100%;
+  height: 150px;
+  float: left;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .logo {
+      padding-left: 60px;
+      text-align: center;
+      height: 80px; /* Adjust the height to fit within the navbar */
+      width: 500px;
+  }     
+}
+@media (max-width: 576px) {
+  .logo {
+      padding-right: 10%;
+      text-align: center;
+      height: 90px;
+      
+  }     
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar{
+  display: flex;
+  height: 10%;
+  line-height: 10%;
+  position: fixed;
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-size: 80%;
+  flex-wrap: nowrap;
+  z-index: 1000;
+  padding: 0 auto;
+}
+.navbar:hover {
+  border-bottom: 1px solid #cccccc; /* Border style on hover */
+}
+.navbar-nav{
+  float: right;
+  display: flex; /* Use flexbox for horizontal layout */
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  flex: 2; /* Adjust flex value based on your layout */
+  
+}
+.navbar-nav li{
+  margin-right: 9%;
+}
+.nav-item a{
+ 
+  color: black;
+  text-decoration: none;
+}
+.nav-item :last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+.nav-item:hover{
+  text-decoration: underline;
+  color: black;
+}
+.dropdown-menu {
+  position: fixed;
+  display: none;
+  background-color: white;
+  border: 2px solid #cccccc;
+  
+}
+.dropdown-item {
+  padding: 10% 4%;
+  white-space: nowrap; /* Ensure text stays on one line */
+}
+.social-icons a {
+  margin: 0 10px; /* Adjust the value to control the space between icons */
+}
+
+
+.prewedding-gallery {
+  padding: 60px 0;
+}
+.wedding-gallery {
+  padding: 60px 0;
+}
+.container1{
+  width: 100%;
+  background-color: rgb(192, 209, 209);
+}
+.gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 130px;
+}
+
+.gallery-header h1 {
+  font-size: 3.0em;
+  font-weight: 500;
+  font-family: Baskervville;
+}
+
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin-top: 5%;
+  margin-left: 2%;
+  
+}
+
+.gallery-img:hover {
+  transform: scale(1.0);
+}
+
+/* Media query for tablets */
+@media (max-width: 991.98px) {
+  .gallery-img {
+    margin-top: 20px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767.98px) {
+  .gallery-img {
+    padding-top: 30px;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.gallery-section a {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.img-fluid {
+  border-radius: 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  font-family: Baskervville;
+}
+.insta{
+  font-family: Baskervville;
+  font-size: 550%;
+  text-align: center;
+  padding-top: 6%;
+}
+@media (max-width: 1024px) {
+  .insta{
+  padding-top: 40%;
+  font-size: 500%;   
+  }
+}
+@media (max-width: 800px) {
+  .insta{
+  font-size: 300%;   
+  }
+}
+@media (max-width: 576px) {
+  .insta {
+      font-size: 150%;
+  }
+  .link{
+      margin-left: 0px;
+  }
+
+}
+.link{
+  padding-top: 2%;
+  text-align: center;  
+  margin-bottom: -50%;   
+
+}
+.btn-light{
+  color: black;
+  border: 1% solid;
+  border-color: black;
+  background-color: transparent;
+  
+}
+

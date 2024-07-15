@@ -1,0 +1,54 @@
+body {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .gallery-section {
+    padding: 60px 0;
+  }
+  
+  .gallery-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .img-fluid {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-fluid:hover {
+    transform: scale(1.05);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .icon img {
+    width: 50px;
+    height: 50px;
+  }
+  

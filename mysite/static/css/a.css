@@ -1,0 +1,803 @@
+.body{
+    background-blend-mode: multiply;
+    background-color: white;
+}
+
+@media (max-width: 991px) {
+    .sidebar{
+        background-color:white;
+    }
+}
+.container{
+    margin: 0 auto;
+    width:100%;
+    
+}
+.logo{
+    max-width: 150%;
+    height: 150px;
+    float: left;
+}
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .logo {
+        padding-left: 60px;
+        text-align: center;
+        height: 80px; /* Adjust the height to fit within the navbar */
+        width: 500px;
+    }     
+}
+@media (max-width: 576px) {
+    .logo {
+       padding-right: 25%;
+        text-align: center;
+        height: 90px;
+        
+    }     
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.navbar{
+    display: flex;
+    height: 10%;
+    line-height: 10%;
+    position: fixed;
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 80%;
+    flex-wrap: nowrap;
+    z-index: 1000;
+    padding: 0 auto;
+}
+.navbar:hover {
+    border-bottom: 1px solid #cccccc; /* Border style on hover */
+}
+.navbar-nav{
+    float: right;
+    display: flex; /* Use flexbox for horizontal layout */
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    flex: 2; /* Adjust flex value based on your layout */
+    
+}
+.navbar-nav li{
+    margin-right: 9%;
+}
+.nav-item a{
+   
+    color: black;
+    text-decoration: none;
+}
+.nav-item :last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+.nav-item:hover{
+    text-decoration: underline;
+    color: black;
+}
+.dropdown-menu {
+    position: fixed;
+    display: none;
+    background-color: white;
+    border: 2px solid #cccccc;
+    
+}
+.dropdown-item {
+    padding: 10% 4%;
+    white-space: nowrap; /* Ensure text stays on one line */
+}
+
+.container {
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%; 
+}
+.carouselExamples{
+    transition-duration: 3s;
+}
+/* Media query for tablets */
+@media (max-width: 991.98px) {
+    .carousel-inner img {
+       margin-top: 20px;
+        height: 500px; /* Adjust the height as needed for tablet screens */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767.98px) {
+    .carousel-inner img {
+        padding-top: 30px;
+        max-width: 100%;
+        padding-left: 70px;
+        height: 200px; /* Adjust the height as needed for mobile screens */
+    }
+}
+/* Ensuring the carousel is centered on all screen sizes */
+
+
+.heading{
+    padding-top: 3%;
+    padding-left: 13%;
+    font-family: Baskervville;
+    color: #13b7aa;
+    font-size: 270%;
+    font-weight: 100; 
+}
+.heading p{
+    font-size: 110%;
+    line-height: 1.5;
+    font-weight: 100;
+}
+@media (max-width: 768px) {
+    .heading p {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading p {
+        font-size: 35px;
+        font-size: 20px;
+    }
+}
+.about-section {
+    padding: 0 0;
+    color: black;
+    position: relative;
+    padding-left: 40px;
+}
+.about-content {
+    background: rgb(251, 251, 213);
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 0px;
+    margin-left: 160px;
+    text-align: left;
+}
+.about-content p{
+    margin-right: 40px;
+    margin-left: 40px;
+    line-height: 1.5; 
+}
+.about-image {
+    max-width: 400px;
+    border-radius: 0%;
+    margin: 70px auto;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translateX(-50%);
+}
+@media (max-width: 1024px) {
+    .about-image {
+        position: relative;
+        transform: none;
+        margin: 5px;
+        right: auto;
+        top:auto;
+        display: block;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+    .about-section {
+        text-align: center; /* Adjust this value if necessary */
+    }
+    .about-content {
+        right: auto;
+        top: auto;
+        margin: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+@media (max-width: 480px) {
+    .about-image {
+        position: relative;
+        transform: none;
+        margin: 3px;
+        right: auto;
+        top:auto;
+        display: block;
+        padding-right: 30px;
+    }
+    .about-section {
+        text-align: center; /* Adjust this value if necessary */
+    }
+    .about-content {
+        right: auto;
+        top: auto;
+        margin: 3px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+.section {
+    padding: 60px 0;
+    color: rgb(12, 11, 11);
+}
+
+.container2 {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: rgb(227, 217, 217);
+    position: relative;
+    height: 800px;
+}
+
+.carousel-inner1 {
+    z-index: 0;
+    padding-left: 22%;
+    width: 75%;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 50%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 800px; /* Set max height for images */
+    padding-bottom: 20px;
+    display: block;
+    transition-duration: 2s;
+}
+
+.visual-journey {
+    position: absolute; /* Use absolute positioning to overlap */
+    top: 50%; /* Adjust this value for vertical alignment */
+    right: 12.5%; /* Adjust this value to control the overlap */
+    width: 39%;
+    z-index: 1;
+    line-height: 1.5;
+    font-size: 100%;
+    border: 1px groove rgb(205, 195, 195);
+    background-color: #fff;
+    padding: 3%;
+    transform: translateY(-50%); /* Vertically center the section */
+}
+
+.elementor-image-box-title {
+    padding-bottom: 20px;
+    font-family: Baskervville;
+    font-size: 40px;
+}
+@media (max-width: 1024px) {
+    .carousel-inner1 {
+        z-index: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        max-height: 900px; /* Set max height for images */
+        padding-bottom: 20px;
+        display: block;
+        transition-duration: 2s;
+        margin-left: -25%;
+    }
+    .visual-journey {
+        position: relative;
+        z-index: 1;
+        margin-top: -40%;
+        margin-left: 63%;
+        width: 50%;
+        line-height: 1.5;
+        font-size: 100%;
+        border: 1px groove rgb(205, 195, 195);
+        background-color: #fff;
+        padding: 3%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container2 {
+        width: 100%;
+        height: 530px;
+        margin-left: 4%;
+    }
+    .carousel-inner1 {
+        padding-top: 15px;
+        width: 100%;
+        margin-left: 9%;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;/* Maintain aspect ratio */
+        max-height: 600px; /* Set max height for images */
+        display: block;
+        transition-duration: 2s;
+        
+    }
+    .visual-journey {
+        position: relative;
+        margin-top: 100%;
+        margin-left: 15%; /* Reset left margin for smaller screens */
+        line-height: 1.5;
+        font-size: 120%;
+        width: 100%;
+        border: 0px rgb(205, 195, 195);
+    }
+}
+
+.insta{
+    font-family: "Baskervville";
+    font-size: 550%;
+    text-align: center;
+    padding-top: 6%;
+}
+@media (max-width: 800px) {
+    .insta{
+    font-size: 300%;   
+    }
+}
+@media (max-width: 576px) {
+    .insta {
+        padding-top: 500%;
+        font-size: 150%;
+    }
+}
+.link{
+    padding-top: 2%;
+    text-align: center;   
+}
+.btn-light{
+    color: black;
+    border: 1% solid;
+    border-color: black;
+    background-color: transparent;
+    
+}
+
+.signature-work {
+    padding: 2%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.signature-work p{
+    font-size: 16px; 
+    font-family:'Baskervville',serif;
+}
+.signature-title {
+    font-family: 'Baskervville', serif;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    display: block;
+    width: 40%;
+    max-width: 460px;
+    background-color: white;
+    border: 1px solid #070707;
+    border-radius: 0px;
+    overflow: hidden;
+    text-decoration: none;/*Remove undderline from links*/
+    color: inherit;/* Inherit text color */
+    transition: transform 0.3s;
+}
+
+.portfolio-item img {
+    width: 95%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.portfolio-item h3 {
+    font-family: 'Baskervville', serif;
+    font-size: 2.0em;
+    padding: 30px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .portfolio-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .signature-work{
+        padding-top: 200%;
+    }
+    .portfolio-container{
+        padding-left: 10%;
+    }
+    .portfolio-item {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .portfolio-container {
+        width: 100%;
+    }
+    .portfolio-item {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* General Styles 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section2 {
+    padding-left: 9%;
+    padding-top: 8%;
+    background-color: #ffffff;
+}
+
+
+.clients {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 0px;
+    margin-top: -130px;
+}
+
+.clients h3 {
+    font-family: baskevville;
+    text-align: center;
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+.clients p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: lighter;
+}
+.name{
+    padding-top: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Responsive Styles 
+
+@media (max-width: 1024px) {
+    .section2{
+        margin-left: -80px;
+        width: 100%;
+    }
+    .col-md-4{
+        flex:0 0 45%;
+        max-width: 45%;
+    }
+    .col-md-5{
+        flex: 0 0 46%;
+    }
+   
+    .clients h3{
+        font-size: 35px;
+        margin-top: 53%;
+        font-weight: 300;
+    }
+    .clients p{
+        font-size: 1em;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 480px) {
+    .section2{
+        
+    }
+    .col-md-4, .col-md-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .clients{
+        width: 100%;    
+    }
+    .clients p{
+        margin-left: 15%;
+    }
+    .section2 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .carousel-inner2 img{
+        max-width: 100%;
+        height: auto;
+    }
+ 
+    
+    }*/
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .section2 {
+        padding: 80px;
+        background-color: #ffffff;
+    
+    }
+    
+    .clients {
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 0px;
+        margin-top: 0px;
+        width: 100%;
+        margin-left: 20%;
+    }
+    
+    .clients h3 {
+        font-family: baskevville;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    .clients p {
+        text-align: center;
+        font-size: 15px;
+        line-height: 2;
+        font-weight: lighter;
+    }
+    
+    .name {
+        padding-top: 2%;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+        .section2 {
+            margin-left: 50px;
+            width: 100%;
+            padding: 5%;
+        }
+        .col-md-4{
+            flex: 0 0 45%;
+            max-width: 45%; 
+            margin: 0 auto; /* center the image slider */
+        } 
+        .col-md-5 {
+            flex: 0 0 50%;
+            margin: 0 auto;/* center the testimonials */
+            padding-right: 5%;
+            margin-left: -20%;
+        }
+        .clients h3 {
+            font-size: 30px;
+            margin-top: 10%;
+            font-weight: 300;
+        }
+        .clients p {
+            font-size: 14px;
+            font-weight: 100;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .section2 {
+            padding: px;
+            margin: 0;
+        }
+        .row{
+            flex-direction: column;
+            align-items: center;
+        }
+        .col-md-4, .col-md-5 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 10px;
+        }
+        .clients {
+            width: 100%;
+            margin-top: 0px;
+            padding-top: 0 10px;
+        }
+        .clients h3{
+            margin-top: -10%;
+            margin-left: -10%;
+        }
+        .clients p{
+            margin-top: -20%;
+            margin-left: -45%;
+        }
+        .name{
+            text-align: center;
+            margin-left: -40%;
+        }
+        .carousel-inner2 {
+            padding-left: 20%;
+            padding-top: 20%;
+            
+        }
+        .carousel-inner2 img {
+            max-width: 100%;
+            align-items: center;
+            
+        }
+    }
+    
+
+
+/*.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar .logo img {
+    height: 40px;  Adjust height as needed
+    width: auto;  Maintain aspect ratio 
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.navbar-nav{
+    background-color: rgb(232, 241, 241);
+    position: fixed;
+    width: 100%;
+}
+.navbar{
+    padding-top: 2%;
+    padding-bottom: 4%;
+    padding-left: 34%;
+    padding-right: 20%;
+    font-size: 73%;
+    justify-content: center;
+    flex-wrap: nowrap;  Prevent wrapping 
+}
+.nav-item{
+    letter-spacing: 2px;
+    margin: 0 0.5%;
+}
+.nav-item a{
+    color: black;
+}
+.nav-item:hover{
+    text-decoration: underline;
+    color: black;
+}
+.carousel {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    overflow: visible;
+    border-radius: 1%;
+    box-shadow: 0 4% 8% rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-item {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon {
+      color: red; * Change the color to your desired color *
+}
+
+.social-icons {
+    position: fixed;
+    padding-right: 2%;
+    margin-right: 4%;
+}
+
+.heading{
+    font-family: Baskervville;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    text-align: center;
+    font-size: 500%;
+    padding-top: 8%;
+}
+.contact{
+    text-align: center;
+    font-family: Baskervville;
+    font-size: medium;
+}
+.info{
+    padding-top: 12%;
+    text-align: center;
+    font-size: larger;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 2.8%;
+    font-family: Baskervville;
+    word-spacing: 25%;
+}
+.book{
+    padding-top: 35%;
+    text-align: center;
+    font-size: 5%;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    line-height: 2.8%;
+    font-family: Baskervville;
+
+}
+
+.about{
+    background:#cccccc;
+    }
+    
+.about{
+       background: #2d2d9d;
+       padding: 60px 0;
+      text-align: center;
+}
+
+
+
+<div class="visual-journey">
+<h3 class="elementor-image-box-title">
+  Embark on Your Visual 
+  <br>
+  Journey Today
+</h3>
+<p class="elementor-image-box-escription" style="text-align: justify; font-family:Baskervville;">
+  Discover premier wedding photography in Gorakhpur. Our seasoned artisans specialize in authentic storytelling, capturing couples at their most captivating. 
+  Each frame encapsulates the heart of your story with genuine empathy and passion. We distill matrimony into timeless art, preserving cherished moments for eternity. 
+  With professional yet personal approach, we exceed expectations, ensuring seamless and enjoyable experiences. Using latest techniques and equipment, 
+  we produce stunning visuals reflecting the uniqueness of your love story. Every photograph and video is a testament to our dedication to quality and storytelling. 
+  Join our family of satisfied clients and experience the magic of having your love story captured by true professionals. 
+  Let us transform your wedding day into a timeless collection of memories. Contact us today to schedule a consultation and make your day unforgettable.
+</p>
+*/
